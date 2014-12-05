@@ -1,6 +1,6 @@
 Name:		ocaml-camlp4
 Version:	4.02.1
-Release:	1
+Release:	2
 Summary:	Pre-Processor-Pretty-Printer for OCaml
 License:	LGPLv2+ with exceptions
 URL:		https://github.com/ocaml/camlp4
@@ -12,6 +12,7 @@ Group:		Development/Other
 # compiler is released we will also update this package also.
 BuildRequires:	ocaml
 Requires:	ocaml
+Provides:	camlp4 = %{EVRD}
 
 %description
 Camlp4 is a Pre-Processor-Pretty-Printer for OCaml, parsing a source
