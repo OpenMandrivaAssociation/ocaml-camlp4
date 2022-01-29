@@ -1,10 +1,10 @@
 Name:		ocaml-camlp4
-Version:	4.02.1
-Release:	5
+Version:	4.07.1
+Release:	1
 Summary:	Pre-Processor-Pretty-Printer for OCaml
 License:	LGPLv2+ with exceptions
 URL:		https://github.com/ocaml/camlp4
-Source0:	https://github.com/ocaml/camlp4/archive/4.02.0+1.tar.gz
+Source0:	https://github.com/ocaml/camlp4/archive/camlp4-4.07+1.tar.gz
 Group:		Development/Other
 
 # This package used to be part of the upstream compiler.  We still
@@ -32,7 +32,8 @@ This package contains the development files.
 
 
 %prep
-%setup -qn camlp4-4.02.0-1/
+%setup -qn camlp4-4.07-1
+
 
 
 %build
