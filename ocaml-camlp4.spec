@@ -11,6 +11,7 @@ Group:		Development/Other
 # need to keep it in lock step with the compiler, so whenever a new
 # compiler is released we will also update this package also.
 BuildRequires:	ocaml
+BuildRequires:	ocaml-ocamlbuild
 Requires:	ocaml
 Provides:	camlp4 = %{EVRD}
 
