@@ -1,10 +1,14 @@
+%define upstreamver 4.14+1
+%define dashedver %(echo %{upstreamver} |sed -e 's,\+,-,')
+%define debug_package %{nil}
+
 Name:		ocaml-camlp4
-Version:	4.07.1
+Version:	%(echo %{upstreamver} |sed -e 's,\+,.,')
 Release:	1
 Summary:	Pre-Processor-Pretty-Printer for OCaml
 License:	LGPLv2+ with exceptions
 URL:		https://github.com/ocaml/camlp4
-Source0:	https://github.com/ocaml/camlp4/archive/camlp4-4.07+1.tar.gz
+Source0:	https://github.com/camlp4/camlp4/archive/refs/tags/%{upstreamver}.tar.gz
 Group:		Development/Other
 
 # This package used to be part of the upstream compiler.  We still
@@ -33,7 +37,7 @@ This package contains the development files.
 
 
 %prep
-%setup -qn camlp4-4.07-1
+%setup -qn camlp4-%{dashedver}
 
 
 
