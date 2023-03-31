@@ -4,7 +4,7 @@
 
 Name:		ocaml-camlp4
 Version:	%(echo %{upstreamver} |sed -e 's,\+,.,')
-Release:	1
+Release:	2
 Summary:	Pre-Processor-Pretty-Printer for OCaml
 License:	LGPLv2+ with exceptions
 URL:		https://github.com/ocaml/camlp4
